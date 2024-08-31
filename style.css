@@ -1,19 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /* Style the header with a grey background and some padding */
 .Color--ag {
   background-image: linear-gradient(0.25turn, #7836A1, 30%, #108CE5);
   opacity: 65%;
 }
+
 .Color--2 {
   background-color: #00458C;
 }
+
 .Color--3 {
   background-color: #8EBE3F;
 }
+
 .Color--4 {
   background-color: #511C74;
 }
+
+.Home__body__picture {
+  width: 100%;
+  /* The image will take up 100% of the available width */
+  max-width: 1200px;
+  /* But it won’t exceed 1200px */
+  height: auto;
+}
+
 
 .body {
   font-size: 1em;
@@ -27,22 +40,26 @@
   justify-content: flex-start;
   margin: 0em auto;
 }
+
 @media only screen and (min-width: 1600px) {
   .Thoughts__wrapper {
     max-width: 50%;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Thoughts__wrapper {
     max-width: 60%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Thoughts__wrapper {
     max-width: 100;
     padding-bottom: 2em;
   }
 }
+
 .Thoughts__header {
   display: flex;
   flex-direction: column;
@@ -50,37 +67,44 @@
   justify-content: left;
   margin-bottom: 2.5em;
 }
+
 .Thoughts__header h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   margin-top: 0.5em;
 }
+
 .Thoughts__header p {
   font-family: "Inter", sans-serif;
   margin-top: 1em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Thoughts__header p {
     font-size: 1.35em;
     padding: 0em 1.5em;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Thoughts__header p {
     font-size: 1em;
     padding: 0em 1.5em;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Thoughts__header p {
     font-size: 1em;
     padding: 0em;
   }
 }
+
 .Thoughts__header img {
   width: 70%;
 }
+
 .Thoughts__container {
   display: flex;
   flex-direction: column;
@@ -91,43 +115,54 @@
   transition: box-shadow 0.3s ease;
   border-radius: 1em;
 }
+
 @media only screen and (min-width: 1024px) {
   .Thoughts__container {
     padding: 1.5em 2.5em 1.5em 1.5em;
   }
-  .Thoughts__container:hover, .Thoughts__container:active {
+
+  .Thoughts__container:hover,
+  .Thoughts__container:active {
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Thoughts__container {
     padding: 0em 1em 0em 0em;
   }
-  .Thoughts__container:hover, .Thoughts__container:active {
+
+  .Thoughts__container:hover,
+  .Thoughts__container:active {
     cursor: pointer;
   }
 }
+
 .Thoughts__container__detail__category {
   font-family: "Inter", sans-serif;
   color: #6b6b6b;
   padding-bottom: 0.75em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Thoughts__container__detail__category {
     font-size: 1em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Thoughts__container__detail__category {
     font-size: 0.85em;
   }
 }
+
 .Thoughts__container__detail__tags {
   display: flex;
   flex-direction: row;
   margin-top: 1em;
 }
+
 .Thoughts__container__detail__tags__single {
   padding: 0.25em 0.5em;
   font-family: "Inter", sans-serif;
@@ -135,44 +170,53 @@
   border-radius: 0.85em;
   margin-right: 1em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Thoughts__container__detail__tags__single {
     font-size: 0.85em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Thoughts__container__detail__tags__single {
     font-size: 0.65em;
   }
 }
+
 .Thoughts__container__detail summary {
   display: flex;
   flex-direction: column;
 }
+
 .Thoughts__container__detail summary h1 {
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
+
 @media only screen and (min-width: 1600px) {
   .Thoughts__container__detail summary h1 {
     font-size: 1.75em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Thoughts__container__detail summary h1 {
     font-size: 1.5em;
   }
 }
+
 .Thoughts__text {
   font-family: "Inter", sans-serif;
   color: #000000;
 }
+
 @media only screen and (min-width: 1600px) {
   .Thoughts__text {
     font-size: 1.15em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Thoughts__text {
     font-size: 1em;
@@ -183,42 +227,50 @@
   display: flex;
   flex-direction: column;
 }
+
 @media only screen and (max-width: 1024px) {
   .Portfolio__wrapper {
     margin: 0em;
     max-width: 100%;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .Portfolio__wrapper {
     margin: auto;
     max-width: 50%;
   }
 }
+
 .Portfolio__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .Portfolio__header h1 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   margin-top: 0.5em;
 }
+
 .Portfolio__header p {
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 1em;
 }
+
 .Portfolio__header img {
   width: 70%;
 }
+
 .Portfolio__intro {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
 }
+
 @media only screen and (max-width: 1024px) {
   .Portfolio__intro {
     display: flex;
@@ -229,6 +281,7 @@
     padding-top: 2.5em;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .Portfolio__intro {
     display: flex;
@@ -239,23 +292,27 @@
     padding: 2.5em 0em;
   }
 }
+
 .Portfolio__intro__block {
   display: flex;
   flex-direction: column;
   justify-content: left;
 }
+
 @media only screen and (max-width: 1024px) {
   .Portfolio__intro__block {
     padding-bottom: 2.5em;
     width: 100%;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .Portfolio__intro__block {
     padding-right: 2.5em;
     width: 25%;
   }
 }
+
 .Portfolio__intro__block h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
@@ -263,54 +320,65 @@
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
+
 @media only screen and (min-width: 1600px) {
   .Portfolio__intro__block h1 {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Portfolio__intro__block h1 {
     font-size: 1em;
   }
 }
+
 .Portfolio__intro__block p {
   font-family: "Inter", sans-serif;
   font-size: 1em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Portfolio__intro__block p {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Portfolio__intro__block p {
     font-size: 1em;
   }
 }
+
 .Portfolio__intro__block ul {
   list-style-type: square;
   margin-left: 1em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Portfolio__intro__block ul {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Portfolio__intro__block ul {
     font-size: 1em;
   }
 }
+
 .Portfolio__intro__block ul li {
   margin-bottom: 0.25em;
   font-family: "Inter", sans-serif;
   font-size: 1em;
 }
+
 .Portfolio__paragraph {
   margin-bottom: 2em;
   display: flex;
   flex-direction: column;
 }
+
 .Portfolio__paragraph h1 {
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -320,66 +388,79 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media only screen and (min-width: 1600px) {
   .Portfolio__paragraph h1 {
     font-size: 2em;
     margin-bottom: 0.5em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Portfolio__paragraph h1 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
   }
 }
+
 .Portfolio__paragraph p {
   font-family: "Inter", sans-serif;
   margin-bottom: 1.25em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Portfolio__paragraph p {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Portfolio__paragraph p {
     font-size: 1em;
   }
 }
+
 .Portfolio__paragraph p a {
   color: #999999;
   font-weight: bold;
 }
+
 .Portfolio__paragraph p a:hover {
   opacity: 60%;
   font-style: italic;
 }
+
 .Portfolio__paragraph ul {
   list-style-type: square;
   margin-left: 3em;
   margin-right: 3em;
 }
+
 .Portfolio__paragraph ul li {
   margin-bottom: 0.5em;
   font-family: "Inter", sans-serif;
   font-size: 1em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Portfolio__paragraph ul li {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Portfolio__paragraph ul li {
     font-size: 1em;
   }
 }
+
 .Portfolio__paragraph__iframe {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 75%;
 }
+
 .Portfolio__paragraph__iframe iframe {
   position: absolute;
   top: 0;
@@ -393,66 +474,83 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .Projects__header h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   margin-top: 0.5em;
   text-align: center;
 }
+
 .Projects__header p {
   font-family: "Inter", sans-serif;
   color: black;
   margin-top: 1em;
 }
+
 @media only screen and (min-width: 1600px) {
   .Projects__header p {
     font-size: 1.35em;
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Projects__header p {
     font-size: 1em;
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Projects__header p {
     font-size: 1em;
     text-align: left;
   }
 }
+
 .Projects__container {
   display: flex;
   margin-top: 1em;
 }
+
 @media screen and (max-width: 400px) {
   .Projects__container {
     display: block;
   }
 }
+
 .Projects__column {
   flex: 1;
   flex-direction: column;
 }
+
 .Projects__image {
   position: relative;
 }
+
 .Projects__image img {
   -webkit-filter: brightness(100%);
 }
+
 .Projects__image a {
   display: none;
 }
-.Projects__image:hover, .Projects__image:active {
+
+.Projects__image:hover,
+.Projects__image:active {
   cursor: pointer;
   transition-duration: 0.3s;
 }
-.Projects__image:hover img, .Projects__image:active img {
+
+.Projects__image:hover img,
+.Projects__image:active img {
   -webkit-filter: brightness(50%);
   -webkit-transition: all 0.3 s;
 }
-.Projects__image:hover a, .Projects__image:active a {
+
+.Projects__image:hover a,
+.Projects__image:active a {
   display: block;
   text-align: center;
   visibility: visible;
@@ -474,21 +572,25 @@
   justify-content: flex-start;
   margin: 0em auto;
 }
+
 @media only screen and (min-width: 1600px) {
   .Photo__wrapper {
     max-width: 50%;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Photo__wrapper {
     max-width: 60%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Photo__wrapper {
     max-width: 100%;
   }
 }
+
 .Photo__header {
   display: flex;
   flex-direction: column;
@@ -496,12 +598,14 @@
   justify-content: left;
   margin-bottom: 2em;
 }
+
 .Photo__header h1 {
   font-family: "Poppins", sans-serif;
   font-size: 2em;
   margin-top: 0.5em;
   text-align: center;
 }
+
 .Photo__header p {
   font-family: "Inter", sans-serif;
   font-size: 1em;
@@ -509,48 +613,59 @@
   margin-top: 1em;
   text-align: left;
 }
+
 @media only screen and (min-width: 1600px) {
   .Photo__header p {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Photo__header p {
     font-size: 1em;
   }
 }
+
 .Photo__section {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .Photo__section__container {
   display: flex;
   flex-direction: column;
 }
+
 @media only screen and (min-width: 1024px) {
   .Photo__section__container {
     margin: 1em;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Photo__section__container {
     margin: 0em;
   }
 }
+
 .Photo__section__photos {
   margin-bottom: 1em;
 }
+
 .Photo__section__photos__padding {
   padding-bottom: 1.5em;
 }
+
 .Photo__section__photos summary {
   font-family: "Poppins", sans-serif;
   font-size: 1.5em;
   margin-bottom: 0.5em;
   cursor: pointer;
 }
-.Photo__section__photos summary:hover, .Photo__section__photos summary:active {
+
+.Photo__section__photos summary:hover,
+.Photo__section__photos summary:active {
   transition-duration: 0.3s;
   opacity: 60%;
 }
@@ -562,6 +677,7 @@
   padding: 2em;
   height: 100vh;
 }
+
 .Home__wrapper {
   display: flex;
   flex-direction: column;
@@ -569,21 +685,25 @@
   align-items: center;
   margin: auto;
 }
+
 @media only screen and (min-width: 1600px) {
   .Home__wrapper {
     max-width: 55%;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Home__wrapper {
     max-width: 80%;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .Home__wrapper {
     max-width: 100%;
   }
 }
+
 .Home__h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.25em;
@@ -592,13 +712,16 @@
   text-align: left;
   width: 100%;
 }
+
 .Home__header {
   display: flex;
   justify-content: space-between;
 }
+
 .Home__header__logo {
   flex-shrink: 2;
 }
+
 .Home__header__logo a {
   font-family: "Inter", sans-serif;
   font-size: 3em;
@@ -608,9 +731,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .Home__header__logo a:hover {
   cursor: pointer;
 }
+
 .Home__header__title {
   text-align: left;
   text-decoration: none;
@@ -620,35 +745,44 @@
   color: black;
   line-height: 1;
 }
-.Home__header__title:hover, .Home__header__title:active {
+
+.Home__header__title:hover,
+.Home__header__title:active {
   transition-duration: 0.3s;
   opacity: 60%;
 }
+
 .Home__header__nav {
   font-family: "Poppins", sans-serif;
   padding-left: 2em;
 }
+
 @media only screen and (max-width: 1024px) {
   .Home__header__nav {
     text-align: right;
   }
 }
+
 .Home__header__nav a {
   text-decoration: none;
   font-size: 1.25em;
   margin: 0.25em;
   color: black;
 }
-.Home__header__nav a:hover, .Home__header__nav a:active {
+
+.Home__header__nav a:hover,
+.Home__header__nav a:active {
   transition-duration: 0.3s;
   opacity: 60%;
 }
+
 .Home__more {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 2em;
 }
+
 .Home__more__text {
   display: flex;
   flex-direction: column;
@@ -658,25 +792,30 @@
   min-width: 20em;
   margin-left: 2em;
 }
+
 .Home__more__text a {
   color: #009BDF;
 }
+
 .Home__more__text a:hover {
   opacity: 60%;
   font-style: italic;
 }
+
 .Home__more__text h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.25em;
   margin-bottom: 1em;
   text-align: left;
 }
+
 .Home__more__text p {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   margin-bottom: 1em;
   text-align: left;
 }
+
 .Home__more__images {
   display: flex;
   flex-direction: row;
@@ -687,10 +826,12 @@
   flex-grow: 1.5;
   min-width: 30em;
 }
+
 .Home__more__images img {
   border-radius: 0.5em;
   width: 30vh;
 }
+
 @media only screen and (max-width: 1024px) {
   .Home__body {
     display: flex;
@@ -700,6 +841,7 @@
     margin-top: 1em;
   }
 }
+
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Home__body {
     display: flex;
@@ -710,6 +852,7 @@
     margin-top: 0.5em;
   }
 }
+
 @media only screen and (min-width: 1600px) {
   .Home__body {
     display: flex;
@@ -720,6 +863,7 @@
     margin-top: 0.5em;
   }
 }
+
 .Home__body__text {
   display: flex;
   flex-direction: column;
@@ -727,29 +871,35 @@
   flex-grow: 1.25;
   flex-basis: 0;
 }
+
 .Home__body__text a {
   color: #999999;
   font-weight: bold;
 }
+
 .Home__body__text a:hover {
   opacity: 60%;
   font-style: italic;
 }
+
 .Home__body__text h1 {
   font-family: "Inter", sans-serif;
   margin-bottom: 1em;
   text-align: left;
 }
+
 @media only screen and (min-width: 1600px) {
   .Home__body__text h1 {
     font-size: 1.55em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Home__body__text h1 {
     font-size: 1.25em;
   }
 }
+
 .Home__body__text p {
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -762,34 +912,41 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 @media only screen and (min-width: 1600px) {
   .Home__body__text p {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Home__body__text p {
     font-size: 1em;
   }
 }
+
 .Home__body__text ul {
   list-style-type: square;
   margin-left: 1.5em;
 }
+
 .Home__body__text ul li {
   margin-bottom: 0.25em;
   font-family: "Inter", sans-serif;
 }
+
 @media only screen and (min-width: 1600px) {
   .Home__body__text ul li {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .Home__body__text ul li {
     font-size: 1em;
   }
 }
+
 .Home__body__picture {
   border-radius: 0.5em;
   width: 80%;
@@ -797,6 +954,7 @@
   flex-basis: 0;
   min-width: 20rem;
 }
+
 @media only screen and (max-width: 1024px) {
   .Home__body__picture {
     margin: 2em 0em;
@@ -807,11 +965,13 @@
   font-family: "Inter", sans-serif;
   color: black;
 }
+
 @media only screen and (min-width: 1600px) {
   .body {
     font-size: 1.35em;
   }
 }
+
 @media only screen and (max-width: 1600px) {
   .body {
     font-size: 1em;
