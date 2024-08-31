@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="Home">
+
+    <div class="Home__header">
+
+      <div class="Home__header__logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
+      </div>
+
+      <div class="Home__header__nav">
+        <a href="/">about</a>
+        <a href="projects.html">projects</a>
+        <a href="thoughts.html">thoughts</a>
+        <a href="photography.html">photography</a>
+        <a href="https://drive.google.com/file/d/15uGM14o24FacXeo-oR00MMPaJzZqicro/view?usp=sharing" target="_blank">resume</a>
+      </div>
+    </div>
+
+    <div class="Portfolio__wrapper">
+      <div class="Portfolio__header">
+        <h1><b>FSAE Thermal Analysis</b></h1>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Battery Team Lead & Engineer</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>September 2020 to <br>May 2021</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Steady-State & Transient Heat Transfer, CFD Modeling, Data Analysis</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>MATLAB, SimScale, Python</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Project Goals & Deliverables</h1>
+        <p>
+            Over COVID, we had to operate remotely on the FSAE team since our campus was shut down. As a result,
+            this thermal analysis project was born!
+        </p>
+        <p>
+            I was the Battery Lead at this point in time, and coordinated Battery team activities but contributed technically
+            to this analysis project as an IC. I was responsible for understanding and modeling the behavior of our forced air
+            cooling design in our HV pack. In this project, I determined the heat transfer coefficient analytically, created a 
+            2D heat transfer model in MATLAB with my teammate, and ran a 3D CFD simulation in Simscale for comparison.
+        </p>
+        <p>We were able to leave the project off with conclusions about what testing we needed to do to further correlate the models
+            we had created. See slides below for more details on the execution of the project.</p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>This was the first in-depth thermal analysis project I'd worked on, and I found that I really enjoyed heat transfer as a topic.
+            Some of the technical learnings I gained were:
+            <ul>
+                <li>Always do a conservative 1D hand calc to double check that your more complicated 2D / 3D model outputs are within the right magnitude</li>
+                <li>All models are wrong, and some models are just slightly less wrong &mdash; always do testing to correlate the models!</li>
+                <li>Battery thermal modeling can get complicated and interesting since battery DCIR can change axially vs radially depending 
+                    on the form factor, <i>and</i> it changes based on temperature as well
+                </li>
+            </ul>
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Detailed Slidedeck</h1>
+        <div class="Portfolio__paragraph__iframe">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSFoOdhqLyTWILBfgymdh1AUWj2k7hazdMhevXDyBvjsi018qt3FaMsgyqPIcJh1G7hqF0EsqzOOG1n/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="fade_in.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="index.js"></script>
+
+  </body>
+</html>

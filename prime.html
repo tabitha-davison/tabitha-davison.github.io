@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="Home">
+
+    <div class="Home__header">
+
+      <div class="Home__header__logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
+      </div>
+
+      <div class="Home__header__nav">
+        <a href="/">about</a>
+        <a href="projects.html">projects</a>
+        <a href="thoughts.html">thoughts</a>
+        <a href="photography.html">photography</a>
+        <a href="https://drive.google.com/file/d/15uGM14o24FacXeo-oR00MMPaJzZqicro/view?usp=sharing" target="_blank">resume</a>
+      </div>
+    </div>
+
+    <div class="Portfolio__wrapper">
+      <div class="Portfolio__header">
+        <h1><b>Prime Impact Fund</b></h1>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Investment Analyst (part-time)</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>September to December 2021</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Due Diligence, Market + Competitor Analysis, Technology Feasbility Studies</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>Excel, Powerpoint, Hubspot</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Company Overview</h1>
+        <p>I had the privilege of working at Prime Impact Fund for a semester in college
+            as an Investment Analyst. <a href="https://www.primeimpactfund.com/" target="_blank">Prime Impact Fund</a>, 
+            owned by <a href="https://www.primecoalition.org/" target="_blank">Prime Coalition</a>, is a $50 million, 
+            100% catalytic capital fund started in 2018. Prime invests in technology-based startups that have significant 
+            potential to help transition the world into a low-carbon economy using philanthropic funds.
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>My Work</h1>
+        <p>
+            As an Investment Analyst, my role was to discover promising new startups to add to the evaluation pipeline,
+            conduct due diligence and technology feasibility studies to evaluate these startups, and to support the bigger
+            team in the due diligence process as needed.
+        </p>
+        <p>Not only did I work closely on the investment pipeline, I also worked closely with my manager 
+            <a href="https://www.linkedin.com/in/michaelpcampos/" target="_blank">Michael Campos</a> on an investment thesis
+            around <b>iron and steel recycling</b>. Notably, we found that the Iron and Steel industry is comparable in emissions to
+            that of the Concrete industry, but recycling via Electric Arc Furnaces will be the best and easiest way to decarbonize
+            the industry by a long shot.</p>
+        <p>However, much steel scrap tends to be high in copper content, which makes it hard to
+            recycle fully without degrading the steel quality over time. By about 2030, demand for low-copper content steel will
+            start to outstrip supply. <b>As a result, we should look to invest in technologies that can make copper removal easier or
+            increase copper tolerance while hitting the same material specs in the steel recycling process</b>.
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>I learned a lot by working at Prime, since it gave me insight into the other side of the tech industry: the side that
+            <i>funds</i> technology development. Key learnings include:
+        </p>
+        <ul>
+            <li>It's relatively easy to do simple nakpin math to check fundamental physics of any new technology proposal
+              &mdash; this should be a first gut check to evaluating a startup
+            </li>
+            <li>It's also quick to do napkin math (with energy balance equations) to validate how much a technology solution 
+                will drawdown in GHGs to evaluate GHG reduction potential
+            </li>
+            <li>People relationships take time to build &mdash; as a startup founder, you should reach out to VCs and advisors 
+                early in the process to form strong networks
+            </li>
+            <li>There's a lot of exciting innovations and business models out there, but not every company is the right fit
+                for venture funding
+            </li>
+            <li>For every new technology (especially in climate), it's important to understand the impact policy & regulation
+                may have on your business model and supply chain
+            </li>
+        </ul>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Summary Presentation</h1>
+        <div class="Portfolio__paragraph__iframe">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8PPsbhuTraNG8tI7APhmEczILgkBhocNoSbKmKtoOiZaVQ-Ps9o1nOvUa9Rn7LL18BdpIaEdwH7vR/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="fade_in.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="index.js"></script>
+
+  </body>
+</html>

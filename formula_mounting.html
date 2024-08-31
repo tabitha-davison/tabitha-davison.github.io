@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="Home">
+
+    <div class="Home__header">
+
+      <div class="Home__header__logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
+      </div>
+
+      <div class="Home__header__nav">
+        <a href="/">about</a>
+        <a href="projects.html">projects</a>
+        <a href="thoughts.html">thoughts</a>
+        <a href="photography.html">photography</a>
+        <a href="https://drive.google.com/file/d/15uGM14o24FacXeo-oR00MMPaJzZqicro/view?usp=sharing" target="_blank">resume</a>
+      </div>
+    </div>
+
+    <div class="Portfolio__wrapper">
+      <div class="Portfolio__header">
+        <h1><b>FSAE HV Pack Mounting</b></h1>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Battery Engineer</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>September 2019 to March 2020</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Bolted Joint Analysis, DFMA, Structural FEA, Machining</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>SolidWorks, 3-Axis Mill, CNC-Waterjet</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Project Goals & Deliverables</h1>
+        <p>On the first year I joined Olin's FSAE team, I owned our HV pack mounting subsystem. For this project, I took it from 
+          requirements gathering all the way through to a completed design installed on the vehicle!
+        </p>
+        <p>
+          The main goals of this project were two-fold &mdash; my design needed to:
+          <ul>
+            <li>Reduce the amount of time it took to install the HV pack (previous design to about an hour)</li>
+            <li>Satisfy all rules requirements around the load it can withstand, the number of fasteners needed, and the spacing between fasteners</li>
+          </ul>
+        </p>
+        <p>
+          More details of my execution can be found in the slidedeck below.
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>I had a lot of key learnings from this project since it was one of the first mechanical design projects I was able to own
+          fully from the start to finish:
+          <ul>
+            <li>DFMA is important &mdash; you need to make sure there's enough room for hands and tools, and also enough stock material for 
+              any machining procedure to clamp off of
+            </li>
+            <li>You can go <i>really</i> in depth on bolted joint analysis if you want to &mdash; I just barely scratched the surface with 
+            basic calculations for install torque and bolt tear-out/pull-out!</li>
+            <li>Curvature-based meshing can help improve the accuracy of your FEA results, although weld joints are still hard to simulate 
+              in structural analysis
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Detailed Slidedeck</h1>
+        <div class="Portfolio__paragraph__iframe">
+          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSw1-ORze_XPTAdEww-UMNLxFehm-mPdegwgQ41U1Fbvze-PYqEJiS_lxnZUY2I2QvLCfFoFligCSES/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Process Photos</h1>
+        <div class="flex w-full flex-wrap">
+          <div class="w-full md:w-1/4 p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/mounting/final_assembly.jpg"
+                data-fancybox="gallery">
+                <img alt="Building decor"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/mounting/final_assembly.jpg" />
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/mounting/final_assembly_big.jpg" data-fancybox="gallery">
+                <img alt="Metro sign"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/mounting/final_assembly_big.jpg" />
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/mounting/me_on_mill.jpg" data-fancybox="gallery">
+                <img alt="Metropolitan sign"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/mounting/me_on_mill.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex w-full flex-wrap">
+          <div class="w-full md:w-1/2 p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/mounting/vehicle.png" data-fancybox="gallery">
+                <img alt="Buildings in Paris 13e"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/mounting/vehicle.png" />
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/mounting/waterjet.jpg" data-fancybox="gallery">
+                <img alt="Bike in the street"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/mounting/waterjet.jpg" />
+              </a>
+            </div>
+          </div>
+          <div class="w-full md:w-1/4 p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/mounting/mill.jpg" data-fancybox="gallery">
+                <img alt="Me in storefront reflection"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/mounting/mill.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="fade_in.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="index.js"></script>
+
+  </body>
+</html>

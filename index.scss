@@ -1,0 +1,880 @@
+@import '_vars';
+
+/* Style the header with a grey background and some padding */
+
+.Color {
+  // modify text color for variety
+  // used for color-coding sections on FAQ page
+  &--ag {
+      background-image: linear-gradient(.25turn, #7836A1, 30%, #108CE5);
+      opacity: 65%;
+  }
+  &--2 {
+      background-color: $navy;
+  }
+  &--3 {
+      background-color: $green;
+  }
+  &--4 {
+      background-color: $purple;
+  }
+
+}
+
+.body {
+  font-size: 1em;
+  font-family: $body;
+  color: $main;
+}
+
+.Thoughts {
+
+  &__wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0em auto;
+
+    @media only screen and (min-width: 1600px) {
+      max-width: 50%;
+      
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+      max-width: 60%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      max-width: 100;
+      padding-bottom: 2em;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 2.5em;
+
+    h1 {
+      text-align: center;
+      font-family: $title;
+      font-size: 2em;
+      margin-top: 0.5em;
+    }
+
+    p {
+      font-family: $body;
+      margin-top: 1em;
+      
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+        padding: 0em 1.5em;
+      }
+
+      @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+        font-size: 1em;
+        padding: 0em 1.5em;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 1em;
+        padding: 0em;
+      }
+      
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 1.5em;
+    box-shadow: 0 0 0 rgba(94, 94, 94, 0.15);
+    transition: box-shadow 0.3s ease;
+    border-radius: 1em;
+
+    @media only screen and (min-width: 1024px) {
+      padding: 1.5em 2.5em 1.5em 1.5em;
+      &:hover, &:active {
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(101, 101, 101, 0.8);
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding: 0em 1em 0em 0em;
+
+      &:hover, &:active {
+        cursor: pointer;
+      }
+    }
+
+    &__detail {
+
+      &__category {
+        font-family: $body;
+        color:#6b6b6b;
+        padding-bottom: 0.75em;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 0.85em;
+        }
+      }
+
+      &__tags {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+
+        &__single {
+          padding: 0.25em 0.5em;
+          font-family: $body;
+          color:#ffffff;
+          border-radius: 0.85em;
+          margin-right: 1em;
+
+          @media only screen and (min-width: 1600px) {
+            font-size: 0.85em;
+          }
+      
+          @media only screen and (max-width: 1600px) {
+            font-size: 0.65em;
+          }
+        }
+      }
+
+      summary {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          list-style: none;
+          font-family: $title;
+          font-weight: bold;
+
+          @media only screen and (min-width: 1600px) {
+            font-size: 1.75em;
+          }
+    
+          @media only screen and (max-width: 1600px) {
+            font-size: 1.5em;
+          }
+        }
+        
+      }
+    }
+  }
+
+  &__text {
+    font-family: $body;
+    color:#000000;
+
+    @media only screen and (min-width: 1600px) {
+      font-size: 1.15em;
+    }
+
+    @media only screen and (max-width: 1600px) {
+      font-size: 1em;
+    }
+      
+  }
+
+}
+
+.Portfolio {
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 1024px) {
+      margin: 0em;
+      max-width: 100%;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      margin: auto;
+      max-width: 50%;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+      font-family: $title;
+      font-size: 2em;
+      margin-top: 0.5em;
+    }
+
+    p {
+      text-align: center;
+      font-family: $body;
+      font-size: 1em;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &__intro {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 4.5em 0em;
+      padding-top: 2.5em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 4.5em 0em 4.5em 0em;
+      padding: 2.5em 0em;
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+
+      @media only screen and (max-width: 1024px) {
+        padding-bottom: 2.5em;
+        width: 100%;
+      }
+  
+      @media only screen and (min-width: 1024px) {
+        padding-right: 2.5em;
+        width: 25%;
+      }
+
+      h1 {
+        font-family: $title;
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
+      }
+
+      p {
+        font-family: $body;
+        font-size: 1em;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
+      }
+
+      ul {
+        list-style-type: square;
+        margin-left: 1em;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
+
+        li {
+          margin-bottom: 0.25em;
+          font-family: $body;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-family: $body;
+      font-weight: bold;
+      text-align: left;
+      color: white;
+
+      background: linear-gradient(.25turn, #7836A1, 30%, #108CE5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+      }
+
+      @media only screen and (max-width: 1600px) {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+      }
+    }
+
+    p {
+      font-family: $body;
+      margin-bottom: 1.25em;
+
+      @media only screen and (min-width: 1600px) {
+      font-size: 1.35em;
+      }
+
+      @media only screen and (max-width: 1600px) {
+        font-size: 1em;
+      }
+
+      a {
+        color: #999999;
+        font-weight: bold;
+
+        &:hover {
+          opacity: 60%;
+          font-style: italic;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 3em;
+      margin-right: 3em;
+
+      li {
+        margin-bottom: 0.5em;
+        font-family: $body;
+        font-size: 1em;
+
+        @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+        }
+
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
+      }
+    }
+
+    &__iframe {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 75%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+.Projects {
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-family: $title;
+      font-size: 2em;
+      margin-top: 0.5em;
+      text-align: center;
+    }
+
+    p {
+      font-family: $body;
+      color: $main;
+      margin-top: 1em;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+        text-align: center;
+      }
+    
+      @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        font-size: 1em;
+        text-align: left;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 1em;
+
+    @media screen and (max-width: 400px) {
+      display: block;
+    }
+  }
+
+  &__column {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      -webkit-filter: brightness(100%);
+    }
+
+    a {
+      display:none;
+    }
+
+    &:hover, &:active {
+      cursor: pointer;
+      transition-duration: 0.3s;
+
+      img {
+        -webkit-filter: brightness(50%);
+        -webkit-transition: all 0.3 s;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        visibility: visible;
+        font: $body;
+        font-size: 1.5em;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        line-height: 100%;
+        transition: opacity .3s, visibility .3s;
+      }
+    }
+  }
+}
+
+.Photo {
+
+  &__wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0em auto;
+
+    @media only screen and (min-width: 1600px) {
+      max-width: 50%;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+      max-width: 60%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      max-width: 100%;
+    }
+
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 2em;
+
+    h1 {
+      font-family: $title;
+      font-size: 2em;
+      margin-top: 0.5em;
+      text-align: center;
+    }
+
+    p {
+      font-family: $body;
+      font-size: 1em;
+      color: $main;
+      margin-top: 1em;
+      text-align: left;
+
+      @media only screen and (min-width: 1600px) {
+        font-size: 1.35em;
+      }
+  
+      @media only screen and (max-width: 1600px) {
+        font-size: 1em;
+      }
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (min-width: 1024px) {
+        margin: 1em;
+      }
+  
+      @media only screen and (max-width: 1024px) {
+        margin: 0em;
+      }
+    }
+
+    &__photos {
+      margin-bottom: 1em;
+
+      &__padding {
+        padding-bottom: 1.5em;
+      }
+
+      summary {
+        font-family: $title;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        cursor: pointer;
+
+        &:hover, &:active {
+          transition-duration: 0.3s;
+          opacity: 60%;
+        }
+      }
+    }
+  }
+
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2em;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+    @media only screen and (min-width: 1600px) {
+      max-width: 55%;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+      max-width: 80%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+
+  &__h1 {
+    font-family: $title;
+    font-size: 1.25em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+      flex-shrink: 2;
+
+      a {
+        font-family: $body;
+        font-size: 3em;
+        text-align: left;
+        //background-color: $links;
+        color: white;
+
+        background: linear-gradient(to right,#108CE5, #7836A1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__title {
+      text-align: left;
+      text-decoration: none;
+      display: block;
+      font-family: $title;
+      font-size: 3em;
+      color: $main;
+      line-height: 1;
+
+      &:hover, &:active {
+        transition-duration: 0.3s;
+        opacity: 60%;
+      }
+    }
+
+    &__nav {
+      font-family: $title;
+      padding-left: 2em;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: right;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.25em;
+        margin: 0.25em;
+        color: $main;
+
+        &:hover, &:active {
+          transition-duration: 0.3s;
+          opacity: 60%;
+        }
+      }
+      
+    }
+  }
+
+  &__more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 0;
+      flex-grow: 0.5;
+      min-width: 20em;
+      margin-left: 2em;
+
+      a {
+        //background-color: $secondary--light;
+        color: $links;
+
+        &:hover {
+          opacity: 60%;
+          font-style: italic;
+        }
+      }
+
+      h1 {
+        font-family: $title;
+        font-size: 1.25em;
+        margin-bottom: 1em;
+        text-align: left;
+      }
+
+      p {
+        font-family: $title;
+        font-size: 1em;
+        margin-bottom: 1em;
+        text-align: left;
+      }
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1em;
+      overflow: hidden;
+      flex-basis: 0;
+      flex-grow: 1.5;
+      min-width: 30em;
+
+      img {
+        border-radius: 0.5em;
+        width: 30vh;
+      }
+    }
+  }
+
+  &__body {
+
+    @media only screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1em;
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1600px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+      margin-top: 0.5em;
+    }
+
+    @media only screen and (min-width: 1600px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+      margin-top: 0.5em;
+    }
+    
+    &__text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1.25;
+      flex-basis: 0;
+
+      a {
+        //background-color: $secondary--light;
+        color: #999999;
+        font-weight: bold;
+
+        &:hover {
+          opacity: 60%;
+          font-style: italic;
+        }
+      }
+
+      h1 {
+        font-family: $body;
+        margin-bottom: 1em;
+        text-align: left;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.55em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1.25em;
+        }
+      }
+
+      p {
+        font-family: $body;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        text-align: left;
+        text-transform: uppercase;
+        //background-color: $links;
+        color: white;
+        margin-top: 1em;
+
+        background: linear-gradient(to right,#108CE5, #7836A1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+        }
+    
+        @media only screen and (max-width: 1600px) {
+          font-size: 1em;
+        }
+      }
+
+      ul {
+        list-style-type: square;
+        margin-left: 1.5em;
+
+        li {
+          margin-bottom: 0.25em;
+          font-family: $body;
+
+          @media only screen and (min-width: 1600px) {
+          font-size: 1.35em;
+          }
+      
+          @media only screen and (max-width: 1600px) {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    &__picture{
+      border-radius: 0.5em;
+      width: 80%;
+      flex-grow: 0.75;
+      flex-basis: 0;
+      min-width: 20rem;
+
+       @media only screen and (max-width: 1024px) {
+        margin: 2em 0em;
+        }
+    }
+  }
+
+}
+
+.body {
+  font-family: $body;
+  color: black;
+
+  @media only screen and (min-width: 1600px) {
+  font-size: 1.35em;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    font-size: 1em;
+    margin-bottom: 2em;
+  }
+}

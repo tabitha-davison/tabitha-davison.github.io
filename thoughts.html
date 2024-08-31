@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+  </head>
+
+  <body class="Home">
+
+    <div class="Home__header">
+
+      <div class="Home__header__logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
+      </div>
+
+      <div class="Home__header__nav">
+        <a href="/">about</a>
+        <a href="projects.html">projects</a>
+        <a href="thoughts.html">thoughts</a>
+        <a href="photography.html">photography</a>
+        <a href="https://drive.google.com/file/d/15uGM14o24FacXeo-oR00MMPaJzZqicro/view?usp=sharing" target="_blank">resume</a>
+      </div>
+    </div>
+
+    <div class="Thoughts__wrapper">
+
+      <div class="Thoughts__header">
+        <h1><b>Thoughts</b></h1>
+        <p>I often find myself questioning the systems that we live in, and what philosophies, economic systems, and 
+          governance systems <i>actually</i> enable a better world for everyone. I'll be sharing my thoughts on these 
+          questions through articles and book notes of interesting reads here, alongside other thoughts about life
+          and career.
+        </p>
+      </div>
+
+      <!--one article-->
+      <div class="Thoughts__container">
+        <details class="Thoughts__container__detail">
+          <summary>
+            <div class="Thoughts__container__detail__category"><i>Book Notes</i></div>
+            <h1>Eating to Extinction: The World's Rarest Foods and Why We Need to Save Them <i>by Dan Saladino</i></h1>
+            <div class="Thoughts__container__detail__tags">
+              <div class="Thoughts__container__detail__tags__single  Color--ag";>Agriculture</div>
+              <div class="Thoughts__container__detail__tags__single  Color--ag";>Biodiversity</div>
+            </div>
+          </summary>
+          <div class="Thoughts__text">
+            <zero-md class="Thoughts__text" src="thoughts/eating_to_extinction.md">
+              <template>
+                <!-- Define your own styles inside a `<style>` tag -->
+                <style>
+                  li {margin-bottom: 1em; margin-left: -1em;}
+                  ul {margin-top: 1em; margin-left: -0.5em;}
+                </style>
+              </template>
+            </zero-md>         
+          </div>
+        </details>
+      </div>
+      <!--article end-->
+
+      <!--one article-->
+      <div class="Thoughts__container">
+        <details class="Thoughts__container__detail">
+          <summary>
+            <div class="Thoughts__container__detail__category"><i>Book Notes</i></div>
+            <h1>Why We Fight: The Roots of War and Paths to Peace <i>by Christopher Blattman</i></h1>
+            <div class="Thoughts__container__detail__tags">
+              <div class="Thoughts__container__detail__tags__single  Color--ag";>War</div>
+              <div class="Thoughts__container__detail__tags__single  Color--ag";>Governance</div>
+            </div>
+          </summary>
+          <div class="Thoughts__text">
+            <zero-md class="Thoughts__text" src="thoughts/why_we_fight.md">
+              <template>
+                <!-- Define your own styles inside a `<style>` tag -->
+                <style>
+                  li {margin-bottom: 1em; margin-left: -1em;}
+                  ul {margin-top: 1em; margin-left: -0.5em;}
+                </style>
+              </template>
+            </zero-md>         
+          </div>
+        </details>
+      </div>
+      <!--article end-->
+      
+    </div>
+  </body>
+</html>

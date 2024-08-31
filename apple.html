@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="Home">
+
+    <div class="Home__header">
+
+      <div class="Home__header__logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
+      </div>
+
+      <div class="Home__header__nav">
+        <a href="/">about</a>
+        <a href="projects.html">projects</a>
+        <a href="thoughts.html">thoughts</a>
+        <a href="photography.html">photography</a>
+        <a href="Resume_Karen Hinh.pdf" target="_blank">resume</a>
+      </div>
+    </div>
+
+    <div class="Portfolio__wrapper">
+      <div class="Portfolio__header">
+        <h1><b>Apple</b></h1>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Battery Test Engineer (SPG)</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>May to August 2022</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Transient Thermal Modeling, Data Analysis, Model + Test Correlation</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>NX, Teamcenter, ANSYS Thermal, MATLAB, NI DAQ</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Project Goals & Deliverables</h1>
+        <p>
+            As a Battery Test Engineer within Apple SPG, I was resposible for owning a transient thermal model that would help the
+            team design and iterate the battery architecture faster (a well-correlated model can save valuable testing resources).
+        </p>
+        <p>
+            I developed the model in ANSYS Thermal, and worked closely with the ANSYS Applications Engineering team to write custom
+            scripts to more tightly align model boundary conditions and results with what we were seeing in abuse tests. In additional 
+            to the modeling work, I also developed new test plans and fixtures for the abuse tests. 
+        </p>
+        <p>
+            A couple of small side projects included troubleshooting pressure sensor accuracy and implementing a new calibration method
+            that improved accuracy from +/- 20% to +/- 5%.
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>
+            Through this experience, I learned <i>a lot</i> about battery abuse testing. I learned:
+            <ul>
+                <li>What the test engineering process looks like: gathering test requirements (what are we trying to learn?), 
+                    design test fixtures, writing pre-/during-/and post-test procedures
+                </li>
+                <li>
+                    To always do a pre-build for a test setup and <i>make sure</i> all your sensors work as setup with the DAQs!
+                </li>
+                <li>
+                    All the different methods to conduct battery abuse testing and why you might choose one over another
+                </li>
+            </ul>
+        </p>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Product Design Engineer (SPG)</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>May to August 2021</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Requirements + Concepts Development, DFMA, FEA, Modal Analysis, Proof-of-Concept Build, Thermal Analysis + Testing</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>NX, Teamcenter, ANSYS Structural, ANSYS Thermal</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Project Goals & Deliverables</h1>
+        <p>
+            As a Product Design Engineer within Apple SPG, my primary focus was to prove out a first of a kind, proof-of-concept for 
+            a subsystem in the SPG project. The subsystem ended up becoming a belt-driven mechanism that could rotate an arm 90&deg;.
+        </p>
+        <p>
+            To make the project happen, I started off by gathering cross-functional requirements for the subsystem from different engineering leads.
+            Once I gathered the requirements, I went through the full design process: ideation, hand calcs, down-selection of ideas through a 
+            design matrix, CAD in NX, structural + modal analysis in ANSYS, and going through two iterations of prototype parts. With a built prototype,
+            I was able to verify that all the requirements were met, and showcase the proof-of-concept to the wider team for design evaluation!
+        </p>
+        <p>
+            Outside of my main project, I worked on a number of design projects including lighting fixtures, assembly and manufacturing fixtures,
+            and prototyping other design concepts.
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>
+            Through this design engineering role, I was able to learn a couple of main lessons:
+            <ul>
+                <li>Having clear requirements is important in order to down-select ideas effectively</li>
+                <li>The faster you can CAD as a design engineer, the more you get to spend your time on the more fun aspects of testing your design and iterating on it :)</li>
+                <li>Simulations for modal analysis are relatively fast, but you need to understand what frequencies you care about and why</li>
+            </ul>
+        </p>
+      </div>
+    </div>
+    
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="fade_in.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="index.js"></script>
+
+  </body>
+</html>

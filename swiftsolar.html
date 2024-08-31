@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css.map" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Start - Fancybox Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="Home">
+
+    <div class="Home__header">
+
+      <div class="Home__header__logo">
+        <a href="/" class="Home__header__title">Karen<br>Hinh</a>
+      </div>
+
+      <div class="Home__header__nav">
+        <a href="/">about</a>
+        <a href="projects.html">projects</a>
+        <a href="thoughts.html">thoughts</a>
+        <a href="photography.html">photography</a>
+        <a href="https://drive.google.com/file/d/15uGM14o24FacXeo-oR00MMPaJzZqicro/view?usp=sharing" target="_blank">resume</a>
+      </div>
+    </div>
+
+    <div class="Portfolio__wrapper">
+      <div class="Portfolio__header">
+        <h1><b>Swift Solar</b></h1>
+      </div>
+      <div class="Portfolio__intro">
+        <div class="Portfolio__intro__block">
+          <h1>Position</h1>
+          <p>Data Engineer</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Timeline</h1>
+          <p>January - May 2021</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Skills Applied</h1>
+          <p>Data Analysis, Python Scripting, Full-Stack Development, UI/UX Design</p>
+        </div>
+        <div class="Portfolio__intro__block">
+          <h1>Tools Used</h1>
+          <p>Python, React (HTML, CSS, JS), Django, PostgreSQL</p>
+        </div>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Company Overview</h1>
+        <p>I had the pleasure of working at <a href="www.swiftsolar.com">Swift Solar</a> as a Data Engineer in Spring 2021! Swift was founded in 2017
+        with the mission of commericializing a next generation perovskite tandem solar cell that could reach over 30% efficiency (for context, most 
+        existing solar cells reach between 15-20% efficiency).
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>My Work</h1>
+        <p>My role there as a Data Engineer to develop the first instance of their big data automation pipeline. The solar cell development process
+            by nature contains a lot of data: in every experiment, a certain number of variables are changed, and the output of the experiments are
+            run through data analysis processes to characterize the results.</p>
+        <p>As the company scaled in R&D efforts, data processing speeds would slowly 
+            become a bottleneck. Everyone on the team had their own versions of spreadsheets and scripts to analyze data, and there was no centralized 
+            or unified way to communicate or aggregate findings from experiments.
+        </p>
+        <p>As such, my work was two-fold. I developed:
+            <ul>
+                <li>Automated python data analysis scripts</li>
+                <li>A web-app platform to input experimental data, track samples, process + analysis test data, and provide summary reports of test results</li>
+            </ul>
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Key Learnings</h1>
+        <p>
+            This was my first non-mechanical engineering role, so I got very familiar with python and automating the data analysis process: how to clean 
+            up the data files, pull out key variables, do math on dataframes, and save automated plots.
+        </p>
+        <p>
+            Through developing a web-app, I also got the chance to learn full-stack web development for the first time. I worked with a SQL database,
+            used Django to structure the back-end and manage the data securely, and used React for the front-end to develop a user-friendly interface
+            that focused on solving the needs of the team.
+        </p>
+        <p>
+            Outside of technical learnings, I was exposed to the solar cell development process, which was super cool to learn about! 
+            I saw the fundamentals of materials science & development in action, and saw the tenacity and volume of R&D experiments 
+            needed to reach success.
+        </p>
+      </div>
+      <div class="Portfolio__paragraph">
+        <h1>Team Photo</h1>
+        <div class="flex w-full flex-wrap">
+          <div class="w-full p-1">
+            <div class="overflow-hidden h-full w-full">
+              <a href="portfolio/swift_team.jpg"
+                data-fancybox="gallery">
+                <img alt="Building decor"
+                  class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                  src="portfolio/swift_team.jpg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      Fancybox.bind("[data-fancybox]", {});
+    </script>
+    <script src="fade_in.js"></script>
+    <script src="menu.js"></script>
+    <script type="module" src="index.js"></script>
+
+  </body>
+</html>
