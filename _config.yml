@@ -7,15 +7,15 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            Karen Hinh
+title:            Tabitha Davison
 tagline:          'Mechanical Engineer'
 description:      'A student at Olin College.'
-url:              https://www.linkedin.com/in/karen-hinh/
-baseurl:          https://karneh.github.io/
+url:              https://www.linkedin.com/in/tabithadavison 
+baseurl:          https://tabitha-davison.github.io/
 
 author:
-  name:           'Karen Hinh'
-  url:            https://www.linkedin.com/in/karen-hinh/
+  name:           'Tabitha Davison'
+  url:            https://www.linkedin.com/in/tabithadavison 
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/karneh/hyde
+  repo:           
